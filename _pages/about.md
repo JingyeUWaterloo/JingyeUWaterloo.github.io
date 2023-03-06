@@ -1,4 +1,7 @@
 ---
+Hi, I am Jingye Xu, first year Ph.D. student in the [Algorithm, Combinatorics and Optimization](https://aco.gatech.edu/) program at [Georgia Tech](https://www.gatech.edu/). I have a broad interest in the intersection of algorithm, combintorics and optimization. Currently, I am working on mixed-integer programming. I am extremely fortunate to be advised by [Santanu S. Dey](https://www2.isye.gatech.edu/~sdey30/) and [Diego Cifuentes](https://www.isye.gatech.edu/users/diego-cifuentes-pardo).
+---
+---
 permalink: /
 title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
 excerpt: "About me"
