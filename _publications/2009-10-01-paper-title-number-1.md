@@ -8,7 +8,8 @@ venue:
 paperurl: 
 citation: 
 ---
-This paper is about the number 1. The number 2 is left for future work.
+
+Submmited to Foundations of Computational Mathematics.
 
 [Download paper here](http://academicpages.github.io/files/lowrankDiag.pdf)
 
