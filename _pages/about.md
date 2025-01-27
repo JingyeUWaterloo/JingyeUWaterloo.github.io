@@ -7,5 +7,5 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Please see my latest website: https://sites.google.com/view/jingyewaterloo
+Please see my [latest website](https://sites.google.com/view/jingyewaterloo)
 
