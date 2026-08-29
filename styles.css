@@ -1394,3 +1394,269 @@ footer {
     font-size: 16px;
   }
 }
+
+
+/* --- publication hyperlinks + slightly larger academic text --- */
+.paper-title-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color .18s ease;
+}
+
+.paper-title-link:hover,
+.paper-title-link:focus-visible {
+  color: #0071e3;
+}
+
+.paper-link-arrow {
+  display: inline-block;
+  margin-left: .32em;
+  font-size: .72em;
+  font-weight: 500;
+  line-height: 1;
+  transform: translateY(-.06em);
+  opacity: .58;
+  transition: transform .18s ease, opacity .18s ease;
+}
+
+.paper-title-link:hover .paper-link-arrow,
+.paper-title-link:focus-visible .paper-link-arrow {
+  transform: translate(.12em, -.16em);
+  opacity: 1;
+}
+
+.scholar-chip {
+  height: 26px;
+  padding: 0 9px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #f2f2f4;
+  color: #3f3f44 !important;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .01em;
+  text-decoration: none;
+}
+
+/* Requested readability bump */
+.mini-about-copy p {
+  font-size: 19px;
+  line-height: 1.62;
+}
+
+.pub-row h3 {
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.pub-row p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.paper-body > p:last-child {
+  font-size: 16px;
+}
+
+@media (max-width: 760px) {
+  .mini-about-copy p { font-size: 17px; }
+  .pub-row h3 { font-size: 19px; }
+  .pub-row p { font-size: 14px; }
+}
+
+
+/* =========================================================
+   Publications — restrained single-column academic layout
+   ========================================================= */
+
+.publications-section {
+  background: #fff;
+}
+
+.publication-stack {
+  max-width: 980px;
+  margin-top: 26px;
+  border-top: 1px solid var(--line);
+}
+
+.publication-entry {
+  padding: 34px 0 35px;
+  border-bottom: 1px solid var(--line);
+}
+
+.publication-main {
+  max-width: 900px;
+}
+
+.publication-entry h3 {
+  margin: 0;
+  font-size: clamp(21px, 2.1vw, 27px);
+  line-height: 1.24;
+  letter-spacing: -.025em;
+  font-weight: 650;
+}
+
+.publication-summary {
+  max-width: 830px;
+  margin: 13px 0 0;
+  color: #56565d;
+  font-size: 17px;
+  line-height: 1.58;
+  letter-spacing: -.008em;
+}
+
+.publication-meta {
+  margin: 12px 0 0;
+  color: #8a8a91;
+  font-size: 14px;
+  line-height: 1.48;
+}
+
+.publication-entry .paper-title-link {
+  color: var(--ink);
+  text-decoration: none;
+  transition: color .18s ease;
+}
+
+.publication-entry .paper-title-link:hover,
+.publication-entry .paper-title-link:focus-visible {
+  color: #0071e3;
+}
+
+.publication-entry .paper-link-arrow {
+  margin-left: .22em;
+  font-size: .62em;
+  opacity: .42;
+  vertical-align: .12em;
+}
+
+.publication-entry .paper-title-link:hover .paper-link-arrow,
+.publication-entry .paper-title-link:focus-visible .paper-link-arrow {
+  opacity: .9;
+}
+
+/* Suppress legacy publication-card layout from earlier versions */
+.publication-grid,
+.publication-list {
+  display: none !important;
+}
+
+@media (max-width: 760px) {
+  .publication-entry {
+    padding: 27px 0 28px;
+  }
+
+  .publication-entry h3 {
+    font-size: 21px;
+  }
+
+  .publication-summary {
+    font-size: 16px;
+    line-height: 1.56;
+  }
+
+  .publication-meta {
+    font-size: 13px;
+  }
+}
+
+
+/* --- Short, quiet blue publication summaries --- */
+.publication-summary {
+  margin: 10px 0 0;
+  color: #2878c8;
+  font-size: 15.5px;
+  line-height: 1.45;
+  font-weight: 500;
+  letter-spacing: -.005em;
+}
+
+@media (max-width: 760px) {
+  .publication-summary {
+    font-size: 15px;
+  }
+}
+
+
+/* --- Venue / conference emphasis --- */
+.venue-highlight {
+  color: #1f6fb8;
+  font-weight: 650;
+}
+
+
+/* --- Honor annotations --- */
+.honor-copy {
+  min-width: 0;
+}
+
+.honor-copy h3 {
+  margin: 0;
+}
+
+.honor-note {
+  margin: 7px 0 0;
+  color: rgba(255,255,255,.52);
+  font-size: 13px;
+  line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+@media (max-width: 760px) {
+  .honor-note {
+    font-size: 12.5px;
+  }
+}
+
+
+/* --- Highlight every occurrence of "optimization" --- */
+.optimization-red {
+  color: #d70015;
+}
+
+
+
+
+/* --- Hero Scholar link --- */
+.hero-scholar {
+  margin-top: 28px;
+}
+
+@media (max-width: 760px) {
+  .hero-scholar {
+    margin-top: 12px;
+  }
+}
+
+
+/* --- Smaller, fully black hero title --- */
+.hero h1 {
+  font-size: clamp(52px, 6.2vw, 86px);
+  line-height: .98;
+  letter-spacing: -.055em;
+  color: var(--ink);
+}
+
+.hero h1 .optimization-red {
+  color: inherit;
+}
+
+@media (max-width: 760px) {
+  .hero h1 {
+    font-size: clamp(44px, 12vw, 62px);
+  }
+}
+
+
+/* --- Hero title: two sizes smaller --- */
+.hero h1 {
+  font-size: clamp(46px, 5.4vw, 76px);
+}
+
+@media (max-width: 760px) {
+  .hero h1 {
+    font-size: clamp(40px, 10.5vw, 56px);
+  }
+}

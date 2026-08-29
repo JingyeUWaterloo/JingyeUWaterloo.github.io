@@ -35,6 +35,9 @@
 
     <div class="sidebar-social">
       <a href="cv.pdf" target="_blank" aria-label="CV" class="cv-chip">CV</a>
+      <a href="https://scholar.google.com/citations?user=Vn2i9lgAAAAJ&hl=en"
+         target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"
+         class="scholar-chip">Scholar</a>
       <a href="mailto:jxu673@gatech.edu" aria-label="Email">
         <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="1.4"/><path d="m4.3 7 7.7 6 7.7-6"/></svg>
       </a>
@@ -49,14 +52,19 @@
     <!-- HERO -->
     <section class="hero" id="home">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Jingye Xu · Optimization</p>
-        <h1>Turning Theory<br />into Impact.</h1>
+        <p class="eyebrow">Jingye Xu · <span class="optimization-red">Optimization</span></p>
+        <h1>Probability, Geometry,<br />Optimization.</h1>
         <p class="hero-text">
-          Ph.D. candidate in Algorithms, Combinatorics and Optimization at Georgia Tech.
+          Ph.D. candidate in Algorithms, Combinatorics and <span class="optimization-red">Optimization</span> at Georgia Tech.
         </p>
         <div class="hero-actions">
           <a class="primary-button" href="#publications">View publications <span>⌄</span></a>
           <a class="inline-link hero-cv" href="cv.pdf" target="_blank">View CV <span>↗</span></a>
+          <a class="inline-link hero-scholar"
+             href="https://scholar.google.com/citations?user=Vn2i9lgAAAAJ&hl=en"
+             target="_blank" rel="noopener noreferrer">
+            Google Scholar <span>↗</span>
+          </a>
         </div>
       </div>
 
@@ -142,12 +150,12 @@
       <div class="mini-about-inner reveal">
         <p class="section-kicker">About</p>
         <div class="mini-about-grid">
-          <h2>Optimization,<br />probability, and geometry.</h2>
+          <h2>Structure beyond<br />convexity.</h2>
           <div class="mini-about-copy">
             <p>
-              I am a Ph.D. candidate in Algorithms, Combinatorics and Optimization at
+              I am a Ph.D. candidate in Algorithms, Combinatorics and <span class="optimization-red">Optimization</span> at
               Georgia Tech, advised by Santanu Dey and Diego Cifuentes.
-              My research focuses on optimization, with particular interests in
+              My research focuses on <span class="optimization-red">optimization</span>, with particular interests in
               nonconvex duality and probabilistic methods.
             </p>
             <a class="inline-link" href="cv.pdf" target="_blank">More in my CV <span>↗</span></a>
@@ -157,73 +165,134 @@
     </section>
 
     <!-- PUBLICATIONS -->
-    <section class="content-section" id="publications">
+    <section class="content-section publications-section" id="publications">
       <div class="section-header compact reveal">
         <p class="section-kicker">Publications</p>
-        <h2>Selected work.</h2>
+        <h2>Work.</h2>
       </div>
 
-      <div class="publication-grid">
-        <article class="paper-card featured-paper reveal">
-          <div class="paper-meta">Submitted to SIAM Journal on Optimization</div>
-          <div class="paper-body">
-            <p class="paper-question">Can inequalities be randomly compressed?</p>
+      <div class="publication-stack">
+
+        <article class="publication-entry reveal">
+          <div class="publication-main">
             <h3>Random projection with linear equalities and inequalities</h3>
-            <p>Santanu Dey · Jingye Xu</p>
+            <p class="publication-summary">
+              Can inequalities be randomly compressed?
+            </p>
+            <p class="publication-meta">
+              Santanu Dey · Jingye Xu · Submitted to <span class="venue-highlight">SIAM Journal on Optimization</span>
+            </p>
           </div>
         </article>
 
-        <article class="paper-card reveal">
-          <div class="paper-meta">Under revision at Mathematical Programming</div>
-          <div class="paper-body">
-            <p class="paper-question">Why does decomposition work so well in practice?</p>
-            <h3>Probabilistic analysis of dual decomposition on two-stage stochastic integer programs</h3>
-            <p>Santanu Dey · Marco Molinaro · Jingye Xu</p>
+        <article class="publication-entry reveal">
+          <div class="publication-main">
+            <h3>
+              <a class="paper-title-link" href="https://arxiv.org/abs/2604.23383"
+                 target="_blank" rel="noopener noreferrer">
+                Probabilistic analysis of dual decomposition on two-stage stochastic integer programs
+                <span class="paper-link-arrow" aria-hidden="true">↗</span>
+              </a>
+            </h3>
+            <p class="publication-summary">
+              Why does decomposition work so well in practice?
+            </p>
+            <p class="publication-meta">
+              Santanu Dey · Marco Molinaro · Jingye Xu · Under revision at <span class="venue-highlight">Mathematical Programming</span>
+            </p>
           </div>
         </article>
 
-        <article class="paper-card reveal">
-          <div class="paper-meta">EC 2026 · under revision at Mathematical Programming</div>
-          <div class="paper-body">
-            <p class="paper-question">When does nonconvexity vanish at scale?</p>
-            <h3>Asymptotically tight Lagrangian dual of smooth nonconvex problems via improved error bound of Shapley-Folkman Lemma</h3>
-            <p>Santanu Dey · Jingye Xu</p>
+        <article class="publication-entry reveal">
+          <div class="publication-main">
+            <h3>
+              <a class="paper-title-link" href="https://arxiv.org/abs/2601.19003"
+                 target="_blank" rel="noopener noreferrer">
+                Asymptotically tight Lagrangian dual of smooth nonconvex problems via improved error bound of Shapley-Folkman Lemma
+                <span class="paper-link-arrow" aria-hidden="true">↗</span>
+              </a>
+            </h3>
+            <p class="publication-summary">
+              When does nonconvexity vanish at scale?
+            </p>
+            <p class="publication-meta">
+              Santanu Dey · Jingye Xu · <span class="venue-highlight">EC 2026</span> · Under revision at <span class="venue-highlight">Mathematical Programming</span>
+            </p>
           </div>
         </article>
-      </div>
 
-      <div class="publication-list">
-        <div class="pub-row reveal">
-          <span class="year">2025</span>
-          <div>
-            <h3>Lagrangian dual with zero duality gap that admits decomposition</h3>
-            <p>Diego Cifuentes · Santanu S. Dey · Jingye Xu · IPCO 2025 · under revision at Mathematical Programming</p>
+        <article class="publication-entry reveal">
+          <div class="publication-main">
+            <h3>
+              <a class="paper-title-link" href="https://arxiv.org/abs/2411.12085"
+                 target="_blank" rel="noopener noreferrer">
+                Lagrangian dual with zero duality gap that admits decomposition
+                <span class="paper-link-arrow" aria-hidden="true">↗</span>
+              </a>
+            </h3>
+            <p class="publication-summary">
+              Can strong duality coexist with decomposition?
+            </p>
+            <p class="publication-meta">
+              Diego Cifuentes · Santanu S. Dey · Jingye Xu · <span class="venue-highlight">IPCO 2025</span> · Under revision at <span class="venue-highlight">Mathematical Programming</span>
+            </p>
           </div>
-        </div>
+        </article>
 
-        <div class="pub-row reveal">
-          <span class="year">2026</span>
-          <div>
-            <h3>Branching with a pre-specified finite list of k-sparse split sets for binary MILPs</h3>
-            <p>Santanu Dey · Diego Moran · Jingye Xu · Operations Research Letters 2026</p>
+        <article class="publication-entry reveal">
+          <div class="publication-main">
+            <h3>
+              <a class="paper-title-link" href="https://doi.org/10.1016/j.orl.2026.107491"
+                 target="_blank" rel="noopener noreferrer">
+                Branching with a pre-specified finite list of k-sparse split sets for binary MILPs
+                <span class="paper-link-arrow" aria-hidden="true">↗</span>
+              </a>
+            </h3>
+            <p class="publication-summary">
+              How powerful can sparse branching be?
+            </p>
+            <p class="publication-meta">
+              Santanu Dey · Diego Moran · Jingye Xu · <span class="venue-highlight">Operations Research Letters</span>, 2026
+            </p>
           </div>
-        </div>
+        </article>
 
-        <div class="pub-row reveal">
-          <span class="year">2025</span>
-          <div>
-            <h3>Sensitivity analysis for mixed binary quadratic programming</h3>
-            <p>Diego Cifuentes · Santanu Dey · Jingye Xu · IPCO 2024 · Mathematical Programming 2025</p>
+        <article class="publication-entry reveal">
+          <div class="publication-main">
+            <h3>
+              <a class="paper-title-link" href="https://doi.org/10.1007/s10107-025-02265-6"
+                 target="_blank" rel="noopener noreferrer">
+                Sensitivity analysis for mixed binary quadratic programming
+                <span class="paper-link-arrow" aria-hidden="true">↗</span>
+              </a>
+            </h3>
+            <p class="publication-summary">
+              Can sensitivity analysis survive nonconvexity?
+            </p>
+            <p class="publication-meta">
+              Diego Cifuentes · Santanu Dey · Jingye Xu · <span class="venue-highlight">IPCO 2024</span> · <span class="venue-highlight">Mathematical Programming</span>, 2025
+            </p>
           </div>
-        </div>
+        </article>
 
-        <div class="pub-row reveal">
-          <span class="year">2023</span>
-          <div>
-            <h3>Computational complexity of decomposing a symmetric matrix as a sum of positive semidefinite and diagonal matrices</h3>
-            <p>Levent Tunçel · Stephen Vavasis · Jingye Xu · Foundations of Computational Mathematics 2023</p>
+        <article class="publication-entry reveal">
+          <div class="publication-main">
+            <h3>
+              <a class="paper-title-link" href="https://doi.org/10.1007/s10208-023-09637-4"
+                 target="_blank" rel="noopener noreferrer">
+                Computational complexity of decomposing a symmetric matrix as a sum of positive semidefinite and diagonal matrices
+                <span class="paper-link-arrow" aria-hidden="true">↗</span>
+              </a>
+            </h3>
+            <p class="publication-summary">
+              When is PSD-plus-diagonal decomposition tractable?
+            </p>
+            <p class="publication-meta">
+              Levent Tunçel · Stephen Vavasis · Jingye Xu · <span class="venue-highlight">Foundations of Computational Mathematics</span>, 2023
+            </p>
           </div>
-        </div>
+        </article>
+
       </div>
     </section>
 
@@ -235,9 +304,12 @@
       </div>
 
       <div class="honor-list">
-        <div class="honor-row reveal">
+        <div class="honor-row reveal honor-row-with-note">
           <span class="honor-year">2026</span>
-          <h3>Alice and John Jarvis Best Student Paper Award</h3>
+          <div class="honor-copy">
+            <h3>Alice and John Jarvis Best Student Paper Award</h3>
+            <p class="honor-note">Awarded annually to one Ph.D. student in Georgia Tech ISyE across all disciplines.</p>
+          </div>
         </div>
         <div class="honor-row reveal">
           <span class="honor-year">2026</span>
@@ -251,9 +323,12 @@
           <span class="honor-year">2024</span>
           <h3>INFORMS George Nicholson Student Paper Competition — Finalist</h3>
         </div>
-        <div class="honor-row reveal">
+        <div class="honor-row reveal honor-row-with-note">
           <span class="honor-year">2024</span>
-          <h3>Shabbir Ahmed PhD Fellowship</h3>
+          <div class="honor-copy">
+            <h3>Shabbir Ahmed PhD Fellowship</h3>
+            <p class="honor-note">Awarded annually to one Ph.D. student in Georgia Tech ISyE in optimization.</p>
+          </div>
         </div>
       </div>
     </section>

@@ -1,18 +1,10 @@
-# Jingye Xu — Minimal academic homepage
+# Jingye Xu — revised About wording
 
-Sections:
-- Hero
-- Short About
-- Publications
-- Honors
+Changes:
+- About heading:
+  `Optimization, probability, and geometry.`
+  -> `Mathematical structure in optimization.`
+- Removed `random projection` from the About paragraph.
 
-The About section is intentionally compact and does not appear in the sidebar navigation.
-
-Deploy these files to:
-`JingyeUWaterloo/JingyeUWaterloo.github.io`
-
+Deploy by replacing:
 - index.html
-- styles.css
-- script.js
-- cv.pdf
-- .nojekyll
