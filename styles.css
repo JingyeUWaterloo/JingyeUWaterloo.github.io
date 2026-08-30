@@ -1660,3 +1660,7 @@ footer {
     font-size: clamp(40px, 10.5vw, 56px);
   }
 }
+
+.section-header > p.llm-era-note {
+  color: #d70015;
+}
