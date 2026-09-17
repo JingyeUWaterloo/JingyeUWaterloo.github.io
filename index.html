@@ -8,6 +8,88 @@
   <title>Jingye Xu — Publications & Honors</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
+
+  <style>
+    /* Requested homepage emphasis: CV / Google Scholar */
+    .sidebar-social .cv-chip,
+    .sidebar-social .scholar-chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      padding: 0 11px;
+      border-radius: 10px;
+      font-weight: 700;
+      letter-spacing: -.01em;
+      box-shadow: 0 6px 16px rgba(0,0,0,.08);
+    }
+
+    .sidebar-social .cv-chip {
+      color: #fff;
+      background: #111113;
+      border: 1px solid #111113;
+    }
+
+    .sidebar-social .scholar-chip {
+      color: #0b66c3;
+      background: #eaf3ff;
+      border: 1px solid rgba(0,113,227,.18);
+    }
+
+    .highlight-action {
+      min-height: 48px;
+      margin-top: 28px !important;
+      padding: 0 17px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 11px;
+      font-size: 14px;
+      font-weight: 650;
+      box-shadow: 0 9px 24px rgba(0,0,0,.08);
+      transition:
+        transform .22s cubic-bezier(.22,.61,.36,1),
+        box-shadow .22s cubic-bezier(.22,.61,.36,1),
+        background .22s ease;
+    }
+
+    .highlight-action svg {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .highlight-action.cv-action {
+      color: #111113;
+      background: #fff;
+      border: 1px solid rgba(0,0,0,.10);
+    }
+
+    .highlight-action.scholar-action {
+      color: #0b66c3;
+      background: #eaf3ff;
+      border: 1px solid rgba(0,113,227,.18);
+    }
+
+    .highlight-action:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(0,0,0,.12);
+    }
+
+    @media (max-width: 760px) {
+      .highlight-action {
+        margin-top: 12px !important;
+      }
+
+      .hero-actions .cv-action {
+        margin-top: 18px !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -17,29 +99,41 @@
 
       <nav class="side-nav">
         <a class="nav-item active" href="#home">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.8 12 3l9 7.8v9.1a1.1 1.1 0 0 1-1.1 1.1h-5.3v-6.2H9.4V21H4.1A1.1 1.1 0 0 1 3 19.9Z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 10.8 12 3l9 7.8v9.1a1.1 1.1 0 0 1-1.1 1.1h-5.3v-6.2H9.4V21H4.1A1.1 1.1 0 0 1 3 19.9Z"/>
+          </svg>
           <span>Home</span>
         </a>
 
         <a class="nav-item" href="#publications">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5h6l1.5 1.8H20V19a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19Z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7.5h6l1.5 1.8H20V19a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19Z"/>
+          </svg>
           <span>Publications</span>
         </a>
 
         <a class="nav-item" href="#honors">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9-5.4 2.9 1-6-4.3-4.2 6-.9Z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m12 3 2.7 5.5 6 .9-4.3 4.2 1 6-5.4-2.9-5.4 2.9 1-6-4.3-4.2 6-.9Z"/>
+          </svg>
           <span>Honors</span>
         </a>
       </nav>
     </div>
 
     <div class="sidebar-social">
-      <a href="cv.pdf" target="_blank" aria-label="CV" class="cv-chip">CV</a>
+      <a href="cv.pdf" target="_blank" rel="noopener noreferrer"
+         aria-label="View CV" class="cv-chip">CV</a>
+
       <a href="https://scholar.google.com/citations?user=Vn2i9lgAAAAJ&hl=en"
-         target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"
-         class="scholar-chip">Scholar</a>
+         target="_blank" rel="noopener noreferrer"
+         aria-label="View Google Scholar" class="scholar-chip">Scholar</a>
+
       <a href="mailto:jxu673@gatech.edu" aria-label="Email">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="1.4"/><path d="m4.3 7 7.7 6 7.7-6"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="5.5" width="18" height="13" rx="1.4"/>
+          <path d="m4.3 7 7.7 6 7.7-6"/>
+        </svg>
       </a>
     </div>
   </aside>
@@ -49,21 +143,47 @@
   </button>
 
   <main class="page">
+
     <!-- HERO -->
     <section class="hero" id="home">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Jingye Xu · <span class="optimization-red">Optimization</span></p>
-        <h1>Probability, Geometry,<br />Optimization.</h1>
-        <p class="hero-text">
-          Ph.D. candidate in Algorithms, Combinatorics and <span class="optimization-red">Optimization</span> at Georgia Tech.
+        <p class="eyebrow">
+          Jingye Xu · <span class="optimization-red">Optimization</span>
         </p>
+
+        <h1>Probability, Geometry,<br />Optimization.</h1>
+
+        <p class="hero-text">
+          Ph.D. candidate in Algorithms, Combinatorics and
+          <span class="optimization-red">Optimization</span> at Georgia Tech.
+        </p>
+
         <div class="hero-actions">
-          <a class="primary-button" href="#publications">View publications <span>⌄</span></a>
-          <a class="inline-link hero-cv" href="cv.pdf" target="_blank">View CV <span>↗</span></a>
-          <a class="inline-link hero-scholar"
+          <a class="primary-button" href="#publications">
+            View publications <span>⌄</span>
+          </a>
+
+          <a class="highlight-action cv-action"
+             href="cv.pdf" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 3.5h8l4 4V20.5H6Z"/>
+              <path d="M14 3.5v4h4"/>
+              <path d="M9 12h6M9 15.5h6"/>
+            </svg>
+            <span>View CV</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="highlight-action scholar-action"
              href="https://scholar.google.com/citations?user=Vn2i9lgAAAAJ&hl=en"
              target="_blank" rel="noopener noreferrer">
-            Google Scholar <span>↗</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m3 9 9-5 9 5-9 5Z"/>
+              <path d="M7 12.2v4.1c2.7 2.2 7.3 2.2 10 0v-4.1"/>
+              <path d="M21 9v6"/>
+            </svg>
+            <span>Google Scholar</span>
+            <span aria-hidden="true">↗</span>
           </a>
         </div>
       </div>
@@ -87,7 +207,8 @@
               <stop offset="100%" stop-color="#75839a"/>
             </radialGradient>
             <filter id="mathShadow" x="-50%" y="-50%" width="200%" height="200%">
-              <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#657081" flood-opacity=".18"/>
+              <feDropShadow dx="0" dy="20" stdDeviation="18"
+                            flood-color="#657081" flood-opacity=".18"/>
             </filter>
           </defs>
 
@@ -144,8 +265,7 @@
       </div>
     </section>
 
-
-    <!-- SHORT ABOUT -->
+    <!-- ABOUT -->
     <section class="mini-about">
       <div class="mini-about-inner reveal">
         <p class="section-kicker">About</p>
@@ -153,12 +273,16 @@
           <h2 style="font-size: clamp(30px, 3vw, 44px);">Jingye Xu</h2>
           <div class="mini-about-copy">
             <p>
-              I am Jingye Xu, a Ph.D. candidate in Algorithms, Combinatorics and <span class="optimization-red">Optimization</span> at
-              Georgia Tech, advised by Santanu Dey and Diego Cifuentes.
-              My research focuses on <span class="optimization-red">optimization</span>, with particular interests in
-              nonconvex duality and probabilistic methods.
+              I am Jingye Xu, a Ph.D. candidate in Algorithms, Combinatorics and
+              <span class="optimization-red">Optimization</span> at Georgia Tech,
+              advised by Santanu Dey and Diego Cifuentes.
+              My research focuses on <span class="optimization-red">optimization</span>,
+              with particular interests in nonconvex duality and probabilistic methods.
             </p>
-            <a class="inline-link" href="cv.pdf" target="_blank">More in my CV <span>↗</span></a>
+            <a class="inline-link" href="cv.pdf" target="_blank"
+               rel="noopener noreferrer">
+              More in my CV <span>↗</span>
+            </a>
           </div>
         </div>
       </div>
@@ -180,7 +304,8 @@
               Can inequalities be randomly compressed?
             </p>
             <p class="publication-meta">
-              Santanu Dey · Jingye Xu · Submitted to <span class="venue-highlight">SIAM Journal on Optimization</span>
+              Santanu Dey · Jingye Xu · Submitted to
+              <span class="venue-highlight">SIAM Journal on Optimization</span>
             </p>
           </div>
         </article>
@@ -188,7 +313,8 @@
         <article class="publication-entry reveal">
           <div class="publication-main">
             <h3>
-              <a class="paper-title-link" href="https://arxiv.org/abs/2604.23383"
+              <a class="paper-title-link"
+                 href="https://arxiv.org/abs/2604.23383"
                  target="_blank" rel="noopener noreferrer">
                 Probabilistic analysis of dual decomposition on two-stage stochastic integer programs
                 <span class="paper-link-arrow" aria-hidden="true">↗</span>
@@ -198,7 +324,8 @@
               Why does decomposition work so well in practice?
             </p>
             <p class="publication-meta">
-              Santanu Dey · Marco Molinaro · Jingye Xu · Under revision at <span class="venue-highlight">Mathematical Programming</span>
+              Santanu Dey · Marco Molinaro · Jingye Xu · Under revision at
+              <span class="venue-highlight">Mathematical Programming</span>
             </p>
           </div>
         </article>
@@ -206,7 +333,8 @@
         <article class="publication-entry reveal">
           <div class="publication-main">
             <h3>
-              <a class="paper-title-link" href="https://arxiv.org/abs/2601.19003"
+              <a class="paper-title-link"
+                 href="https://arxiv.org/abs/2601.19003"
                  target="_blank" rel="noopener noreferrer">
                 Asymptotically tight Lagrangian dual of smooth nonconvex problems via improved error bound of Shapley-Folkman Lemma
                 <span class="paper-link-arrow" aria-hidden="true">↗</span>
@@ -216,7 +344,10 @@
               When does nonconvexity vanish at scale?
             </p>
             <p class="publication-meta">
-              Santanu Dey · Jingye Xu · <span class="venue-highlight">EC 2026</span> · Under revision at <span class="venue-highlight">Mathematical Programming</span>
+              Santanu Dey · Jingye Xu ·
+              <span class="venue-highlight">EC 2026</span> ·
+              Under revision at
+              <span class="venue-highlight">Mathematical Programming</span>
             </p>
           </div>
         </article>
@@ -224,7 +355,8 @@
         <article class="publication-entry reveal">
           <div class="publication-main">
             <h3>
-              <a class="paper-title-link" href="https://arxiv.org/abs/2411.12085"
+              <a class="paper-title-link"
+                 href="https://arxiv.org/abs/2411.12085"
                  target="_blank" rel="noopener noreferrer">
                 Lagrangian dual with zero duality gap that admits decomposition
                 <span class="paper-link-arrow" aria-hidden="true">↗</span>
@@ -234,7 +366,10 @@
               Can strong duality coexist with decomposition?
             </p>
             <p class="publication-meta">
-              Diego Cifuentes · Santanu S. Dey · Jingye Xu · <span class="venue-highlight">IPCO 2025</span> · Under revision at <span class="venue-highlight">Mathematical Programming</span>
+              Diego Cifuentes · Santanu S. Dey · Jingye Xu ·
+              <span class="venue-highlight">IPCO 2025</span> ·
+              Under revision at
+              <span class="venue-highlight">Mathematical Programming</span>
             </p>
           </div>
         </article>
@@ -242,7 +377,8 @@
         <article class="publication-entry reveal">
           <div class="publication-main">
             <h3>
-              <a class="paper-title-link" href="https://doi.org/10.1016/j.orl.2026.107491"
+              <a class="paper-title-link"
+                 href="https://doi.org/10.1016/j.orl.2026.107491"
                  target="_blank" rel="noopener noreferrer">
                 Branching with a pre-specified finite list of k-sparse split sets for binary MILPs
                 <span class="paper-link-arrow" aria-hidden="true">↗</span>
@@ -251,8 +387,10 @@
             <p class="publication-summary">
               How powerful can sparse branching be?
             </p>
-            <p class="publication-meta">
-              Santanu Dey · Diego Moran · Jingye Xu · <span class="venue-highlight">Operations Research Letters</span>, 2026
+            <p class="publication-meta journal-published">
+              Santanu Dey · Diego Moran · Jingye Xu ·
+              <span class="venue-highlight">Operations Research Letters</span>,
+              <span class="venue-highlight">2026</span>
             </p>
           </div>
         </article>
@@ -260,7 +398,8 @@
         <article class="publication-entry reveal">
           <div class="publication-main">
             <h3>
-              <a class="paper-title-link" href="https://doi.org/10.1007/s10107-025-02265-6"
+              <a class="paper-title-link"
+                 href="https://doi.org/10.1007/s10107-025-02265-6"
                  target="_blank" rel="noopener noreferrer">
                 Sensitivity analysis for mixed binary quadratic programming
                 <span class="paper-link-arrow" aria-hidden="true">↗</span>
@@ -269,8 +408,11 @@
             <p class="publication-summary">
               Can sensitivity analysis survive nonconvexity?
             </p>
-            <p class="publication-meta">
-              Diego Cifuentes · Santanu Dey · Jingye Xu · <span class="venue-highlight">IPCO 2024</span> · <span class="venue-highlight">Mathematical Programming</span>, 2025
+            <p class="publication-meta journal-published">
+              Diego Cifuentes · Santanu Dey · Jingye Xu ·
+              <span class="venue-highlight">IPCO 2024</span> ·
+              <span class="venue-highlight">Mathematical Programming</span>,
+              <span class="venue-highlight">2025</span>
             </p>
           </div>
         </article>
@@ -278,7 +420,8 @@
         <article class="publication-entry reveal">
           <div class="publication-main">
             <h3>
-              <a class="paper-title-link" href="https://doi.org/10.1007/s10208-023-09637-4"
+              <a class="paper-title-link"
+                 href="https://doi.org/10.1007/s10208-023-09637-4"
                  target="_blank" rel="noopener noreferrer">
                 Computational complexity of decomposing a symmetric matrix as a sum of positive semidefinite and diagonal matrices
                 <span class="paper-link-arrow" aria-hidden="true">↗</span>
@@ -287,8 +430,10 @@
             <p class="publication-summary">
               When is PSD-plus-diagonal decomposition tractable?
             </p>
-            <p class="publication-meta">
-              Levent Tunçel · Stephen Vavasis · Jingye Xu · <span class="venue-highlight">Foundations of Computational Mathematics</span>, 2023
+            <p class="publication-meta journal-published">
+              Levent Tunçel · Stephen Vavasis · Jingye Xu ·
+              <span class="venue-highlight">Foundations of Computational Mathematics</span>,
+              <span class="venue-highlight">2023</span>
             </p>
           </div>
         </article>
@@ -304,32 +449,42 @@
       </div>
 
       <div class="honor-list">
+
         <div class="honor-row reveal honor-row-with-note">
           <span class="honor-year">2026</span>
           <div class="honor-copy">
             <h3>Alice and John Jarvis Best Student Paper Award</h3>
-            <p class="honor-note">Awarded annually to one Ph.D. student in Georgia Tech ISyE across all disciplines.</p>
+            <p class="honor-note">
+              Awarded annually to one Ph.D. student in Georgia Tech ISyE across all disciplines.
+            </p>
           </div>
         </div>
+
         <div class="honor-row reveal">
           <span class="honor-year">2026</span>
-          <h3>MIP Poster Award — Honorable Mention</h3>
+          <h3>MIP 2026 Poster Award — Honorable Mention</h3>
         </div>
+
         <div class="honor-row reveal">
           <span class="honor-year">2025</span>
           <h3>INFORMS Optimization Society Student Paper Prize — Honorable Mention</h3>
         </div>
+
         <div class="honor-row reveal">
           <span class="honor-year">2024</span>
           <h3>INFORMS George Nicholson Student Paper Competition — Finalist</h3>
         </div>
+
         <div class="honor-row reveal honor-row-with-note">
           <span class="honor-year">2024</span>
           <div class="honor-copy">
             <h3>Shabbir Ahmed PhD Fellowship</h3>
-            <p class="honor-note">Awarded annually to one Ph.D. student in Georgia Tech ISyE in optimization.</p>
+            <p class="honor-note">
+              Awarded annually to one Ph.D. student in Georgia Tech ISyE in optimization.
+            </p>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -338,6 +493,7 @@
       <a href="mailto:jxu673@gatech.edu">jxu673@gatech.edu</a>
       <a href="#home">Back to top ↑</a>
     </footer>
+
   </main>
 </body>
 </html>
