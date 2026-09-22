@@ -89,6 +89,11 @@
         margin-top: 18px !important;
       }
     }
+
+    /* About is one full-width paragraph, without a duplicate name heading. */
+    .mini-about-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
+    .mini-about-copy { max-width: 1180px; padding-top: 0; }
+    .mini-about-copy p { font-size: 16px; line-height: 1.55; }
   </style>
 </head>
 
@@ -151,7 +156,7 @@
           Jingye Xu · <span class="optimization-red">Optimization</span>
         </p>
 
-        <h1>Probability, Geometry,<br />Optimization.</h1>
+        <h1>Jingye Xu</h1>
 
         <p class="hero-text">
           Ph.D. candidate in Algorithms, Combinatorics and
@@ -270,14 +275,13 @@
       <div class="mini-about-inner reveal">
         <p class="section-kicker">About</p>
         <div class="mini-about-grid">
-          <h2 style="font-size: clamp(30px, 3vw, 44px);">Jingye Xu</h2>
           <div class="mini-about-copy">
             <p>
               I am Jingye Xu, a Ph.D. candidate in Algorithms, Combinatorics and
-              <span class="optimization-red">Optimization</span> at Georgia Tech,
-              advised by Santanu Dey and Diego Cifuentes.
-              My research focuses on <span class="optimization-red">optimization</span>,
-              with particular interests in nonconvex duality and probabilistic methods.
+              <span class="optimization-red">Optimization</span> at Georgia Tech, advised by
+              Santanu Dey and Diego Cifuentes. My research focuses on
+              <span class="optimization-red">optimization</span>, with particular interests in
+              nonconvex duality and probabilistic methods.
             </p>
             <a class="inline-link" href="cv.pdf" target="_blank"
                rel="noopener noreferrer">
